@@ -5,9 +5,9 @@ public class CountingSort {
 	// Driver method 
 			public static void main(String args[]) 
 			{ 
-				int[] arrayToSort = {5,1,3,2,4,3};
+				int[] arrayToSort = {5,1,3,2,4,3,9,};
 				CountingSort cs = new CountingSort();
-				arrayToSort = cs.countingSort(arrayToSort,5);
+				arrayToSort = cs.countingSort(arrayToSort,9);
 				
 				for(int i = 0; i < arrayToSort.length; i++) {
 					System.out.println(arrayToSort[i]);
