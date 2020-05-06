@@ -44,7 +44,7 @@ public class CountingSort {
 					int currentNumber = arrayToSort[i];
 					
 					//
-					sorted[count[currentNumber]-1] = currentNumber;//2
+					sorted[count[currentNumber]-1] = currentNumber;
 					count[currentNumber] -= 1;
 				}
 				
