@@ -1,13 +1,21 @@
+/*
+ * Basic counting sort implementation.  Very efficient usually listed as
+ * taking O(n + k) where n is the number of elements and k is the size of the 
+ * largest element.  
+ * 
+ * 
+ */
+
 package com.tmoodini.basicsorts;
 
 public class CountingSort {
 
-	// Driver method 
+	
 			public static void main(String args[]) 
 			{ 
-				int[] arrayToSort = {5,1,3,2,4,3,9,};
+				int[] arrayToSort = {3,2,1,3};
 				CountingSort cs = new CountingSort();
-				arrayToSort = cs.countingSort(arrayToSort,9);
+				arrayToSort = cs.countingSort(arrayToSort,3);
 				
 				for(int i = 0; i < arrayToSort.length; i++) {
 					System.out.println(arrayToSort[i]);
