@@ -18,6 +18,16 @@ public class BalancedBinaryTree {
 		this.root = null;
 	}
 	
+	public int getHeight() {
+		if(this.root == null) {
+			return 0;
+		}
+		else {
+			return root.getHeight();
+		}
+		
+	}
+	
 	public static class TreeNode{
 		TreeNode left;
 		TreeNode right;
@@ -27,6 +37,23 @@ public class BalancedBinaryTree {
 			this.key = key;
 			
 			left = right = null;
+		}
+		
+		public int getHeight()
+		{
+			int leftHeight = 0; 
+			int rightHeight = 0;
+			
+			if(this.left != null) {
+				leftHeight = left.getHeight();
+			}
+			
+			if(this.right != null) {
+				rightHeight = right.getHeight();
+			}
+			
+			//returns 1 (for the current node) plus the greater of right or left
+			return 1+ Math.max(leftHeight, rightHeight);
 		}
 		
 	}
@@ -62,6 +89,8 @@ public class BalancedBinaryTree {
 	
 	}
 	
+
+	
 	
 	
 	public static void main(String[] args) {
@@ -89,7 +118,7 @@ public class BalancedBinaryTree {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+		System.out.println("height = " + btree.getHeight());
 		//btree.root.left = new TreeNode(2);
 		//btree.root.right = new TreeNode(3);
 		
