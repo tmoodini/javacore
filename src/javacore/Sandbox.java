@@ -5,23 +5,23 @@ import java.util.Random;
 public class Sandbox {
 	public static enum Result {FIRST, SECOND, THIRD}
 	public static void main(String[] args) {
-		Random random = new Random();
-		for( int i = 0; i < 10; i++) {
-			Result randomResult = 
-					 Result.values()[random.nextInt(Result.values().length)];
-			System.out.println(randomResult);
-		}
 		
-		boolean test = true;
-		test = !test;
-		
-		System.out.println(test);
-		
-		
-		System.out.println("Finished");
+		System.out.println(doubleLetters("paradise"));
 		
 		
 
+	}
+	
+public static boolean doubleLetters(String word) {
+		
+		char[] c = word.toCharArray();
+		for(int i = 0; i < c.length-1;i++){
+			if(c[i] == c[i+1]){
+				return true;
+			}
+			
+		}
+		return false;
 	}
 
 }
