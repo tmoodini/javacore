@@ -8,6 +8,10 @@ public class Sandbox {
 		
 		System.out.println(doubleLetters("paradise"));
 		
+	
+		
+		int a3 = 10, b3;
+		
 		
 
 	}
