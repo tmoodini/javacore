@@ -5,7 +5,15 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>javacore</name>
   <description>Some Java core things to play with</description>
-  <build>
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>17.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+    <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
