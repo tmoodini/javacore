@@ -1,4 +1,4 @@
-package javacore;
+package com.tmoodini.javacore;
 
 import java.util.ArrayList;
 

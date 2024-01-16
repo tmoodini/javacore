@@ -17,7 +17,7 @@ public class DirectoryWatcher {
             }catch(Exception e){
                 logger.log(Level.SEVERE, e.getMessage() + "GET WATCHER ERROR");
             }
-            Path path = Path.of("c:/test");
+            Path path = Path.of("/Users/tommoody/test");
 
             try {
                 path.register(
