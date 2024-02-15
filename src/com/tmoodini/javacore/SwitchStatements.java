@@ -8,10 +8,10 @@ public class SwitchStatements {
         String numberString;
         boolean cloudySkies = false;
     /*
-     *  In older versions of Java you had only these rather basic
-     *  statments.
-     *
-     *
+     *  In older versions of Java you had only these kinds of
+     *  switch statements.  A switch works with byte, short, char, and int,
+     *  and wrappers Byte, Short, Character, and Integer,
+     *  enums, and String
      */
         switch(num){
             case 1: System.out.println("1");
@@ -32,7 +32,11 @@ public class SwitchStatements {
             default:System.out.println("Default");
         }
 
-
+        /*
+         *  The next 2, switch expressions moved out of preview ~Java 15.
+         * These can return values.
+         *
+         */
 
         int anothernum = switch(num){
             case 1:
